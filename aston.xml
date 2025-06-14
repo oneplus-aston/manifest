@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <remote name="github-http"
+            fetch="https://github.com/oneplus-aston"
+            sync-c="true"
+            sync-tags="false"
+            revision="fifteen" />
+    <remote name="gitlab-http"
+            fetch="https://gitlab.com/oneplus-lemonadep/aston"
+            sync-c="true"
+            sync-tags="false"
+            revision="fifteen" />
+    <!-- 设备树 -->
+    <project path="device/oneplus/aston" 
+             name="device_oneplus_aston" 
+             remote="github-http" />
 
-  <!-- GitHub -->
-  <remote  name="github"
-           fetch="https://github.com/" />
+    <!-- 通用配置 -->
+    <project path="device/oneplus/sm8550-common" 
+             name="device_oneplus_sm8550-common" 
+             remote="github-http" />
 
-  <!-- Gitlab -->
-  <remote  name="gitlab"
-           fetch="https://gitlab.com/" />
-  
-  <project path="device/oneplus/aston" name="oneplus-lemonadep/device_oneplus_aston" remote="github" revision="fifteen" />
+    <!-- 内核 -->
+    <project path="kernel/oneplus/sm8550" 
+             name="kernel_oneplus_sm8550" 
+             remote="github-http" />
+
+    <!-- 内核模块 -->
+    <project path="kernel/oneplus/sm8550-modules" 
+             name="kernel_oneplus_sm8550-modules" 
+             remote="github-http" />
+
+    <!-- 设备内核 -->
+    <project path="device/oneplus/sm8550-kernel" 
+             name="device_oneplus_sm8550-kernel" 
+             remote="github-http" />
+
+    <!-- Oplus硬件支持 -->
+    <project path="hardware/oplus" 
+             name="hardware_oplus" 
+             remote="github-http" />
+
+    <!-- 厂商文件 -->
+    <project path="vendor/oneplus/aston" 
+             name="vendor_oneplus_aston" 
+             remote="gitlab-http" />
+
+    <!-- 通用厂商文件 -->
+    <project path="vendor/oneplus/sm8550-common" 
+             name="vendor_oneplus_sm8550-common" 
+             remote="gitlab-http" />
 </manifest>
