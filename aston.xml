@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- GitHub -->
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <!-- Gitlab -->
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+  
+  <project path="device/oneplus/aston" name="oneplus-lemonadep/device_oneplus_aston" remote="github" revision="fifteen" />
+</manifest>
