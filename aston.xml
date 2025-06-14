@@ -34,10 +34,20 @@
     <project path="device/oneplus/sm8550-kernel" 
              name="device_oneplus_sm8550-kernel" 
              remote="github-http" />
+             
+    <!-- devicetrees -->
+    <project path="kernel/oneplus/sm8550-devicetrees" 
+             name="kernel_oneplus_sm8550-devicetrees" 
+             remote="github-http" />
 
     <!-- Oplus硬件支持 -->
     <project path="hardware/oplus" 
              name="hardware_oplus" 
+             remote="github-http" />
+             
+    <!-- Dolby硬件支持 -->
+    <project path="hardware/dolby" 
+             name="hardware_dolby" 
              remote="github-http" />
 
     <!-- 厂商文件 -->
