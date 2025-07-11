@@ -4,59 +4,49 @@
             fetch="https://github.com/oneplus-aston"
             sync-c="true"
             sync-tags="false"
-            revision="fifteen" />
-    <remote name="gitlab-http"
-            fetch="https://gitlab.com/oneplus-lemonadep/aston"
-            sync-c="true"
-            sync-tags="false"
-            revision="fifteen" />
+            revision="lineage-23.0" />
     <!-- 设备树 -->
     <project path="device/oneplus/aston" 
-             name="device_oneplus_aston" 
+             name="android_device_oneplus_aston" 
              remote="github-http" />
 
     <!-- 通用配置 -->
     <project path="device/oneplus/sm8550-common" 
-             name="device_oneplus_sm8550-common" 
+             name="android_device_oneplus_sm8550-common" 
              remote="github-http" />
 
     <!-- 内核 -->
     <project path="kernel/oneplus/sm8550" 
-             name="kernel_oneplus_sm8550" 
+             name="android_kernel_oneplus_sm8550" 
              remote="github-http" />
 
     <!-- 内核模块 -->
     <project path="kernel/oneplus/sm8550-modules" 
-             name="kernel_oneplus_sm8550-modules" 
+             name="android_kernel_oneplus_sm8550-modules" 
              remote="github-http" />
 
     <!-- 设备内核 -->
     <project path="device/oneplus/sm8550-kernel" 
-             name="device_oneplus_sm8550-kernel" 
+             name="android_device_oneplus_sm8550-kernel" 
              remote="github-http" />
              
     <!-- devicetrees -->
     <project path="kernel/oneplus/sm8550-devicetrees" 
-             name="kernel_oneplus_sm8550-devicetrees" 
+             name="android_kernel_oneplus_sm8550-devicetrees" 
              remote="github-http" />
 
     <!-- Oplus硬件支持 -->
     <project path="hardware/oplus" 
-             name="hardware_oplus" 
-             remote="github-http" />
-             
-    <!-- Dolby硬件支持 -->
-    <project path="hardware/dolby" 
-             name="hardware_dolby" 
+             name="android_hardware_oplus" 
              remote="github-http" />
 
     <!-- 厂商文件 -->
     <project path="vendor/oneplus/aston" 
-             name="vendor_oneplus_aston" 
-             remote="gitlab-http" />
+             name="proprietary_vendor_oneplus_aston" 
+             remote="github-http" />
 
     <!-- 通用厂商文件 -->
     <project path="vendor/oneplus/sm8550-common" 
-             name="vendor_oneplus_sm8550-common" 
-             remote="gitlab-http" />
+             name="proprietary_vendor_oneplus_sm8550-common" 
+             remote="github-http" />
 </manifest>
