@@ -4,7 +4,12 @@
             fetch="https://github.com/oneplus-aston"
             sync-c="true"
             sync-tags="false"
-            revision="lineage-23.0" />
+            revision="sixteen" />
+    <remote name="gitlab-http"
+            fetch="https://gitlab.com/oneplus-aston"
+            sync-c="true"
+            sync-tags="false"
+            revision="sixteen" />
     <!-- 设备树 -->
     <project path="device/oneplus/aston" 
              name="android_device_oneplus_aston" 
@@ -39,6 +44,11 @@
     <project path="hardware/oplus" 
              name="android_hardware_oplus" 
              remote="github-http" />
+
+    <!-- Dolby支持 -->
+    <project path="hardware/dolby" 
+             name="aston/hardware_dolby" 
+             remote="gitlab-http" />
 
     <!-- 厂商文件 -->
     <project path="vendor/oneplus/aston" 
